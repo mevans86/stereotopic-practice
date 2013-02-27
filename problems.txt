@@ -1,0 +1,2 @@
+Compound Name	Relationship	Incorrect Feedback	Correct Feedback
+(<i>S</i>)-ibuprofen	diastereotopic	<b style="color: red">Nope!</b> This molecule lacks symmetry&mdash;what does this tell you about the possible relationships between the highlighted methyl groups? Do both methyl groups have the same connectivity? Determine the answers to these questions, and you\'ll be in business.	<b style="color: green">Nice!</b> The methyl groups have the same connectivity, but are not related by symmetry. Thus, they exhibit a diastereotopic relationship.
