@@ -51,7 +51,7 @@
 		<div>
 			<?
 				if($intro) {
-					echo '<p>Each problem on this page includes a molecule with two groups or atoms highlighted. Your task is to identify the stereotopic relationship shared by the groups, using either the <a target="_blank" href="http://www.youtube.com/watch?v=WIVJPBBUGsE">Q-test</a> or <a target="_blank" href="http://www.youtube.com/watch?v=facIqMwAFec">symmetry elements</a>. Examine the two- and three-dimensional structures provided, then select a relationship. Immediate feedback will be provided, and you can attempt each problem as many times as you\'d like. Click the button below to begin practicing.</p><p>There are <b>8</b> problems currently available in the Stereotopicity Trainer.</p>';
+					echo '<p>Each problem on this page includes a molecule with two groups or atoms highlighted. Your task is to identify the stereotopic relationship shared by the groups, using either the <a target="_blank" href="http://www.youtube.com/watch?v=WIVJPBBUGsE">Q-test</a> or <a target="_blank" href="http://www.youtube.com/watch?v=facIqMwAFec">symmetry elements</a>. Examine the two- and three-dimensional structures provided, then select a relationship. Immediate feedback will be provided, and you can attempt each problem as many times as you\'d like. Click the button below to begin practicing.</p><p>There are <b>8</b> problems currently available in the Stereotopicity Trainer. Want to <a href="submit.html">submit your own problems?</a></p>';
 					echo '<a class="btn btn-large btn-primary" href=".?p='.$randomId.'">Start Practicing!</a>';
 					die('</div></div><footer><small>Created by <a href="http://www.metallacycle.com/">Michael Evans</a> in 2013.</small></footer>');
 				}
