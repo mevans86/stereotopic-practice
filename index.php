@@ -1,5 +1,7 @@
 <?
-	$problemCount = 10;
+	$problemCount = 11;
+	$javaProblems = array(11);
+	
 	do {
 		$randomId = mt_rand(1, $problemCount);
 	} while ($randomId == $_REQUEST["p"]);
@@ -21,6 +23,11 @@
 	} else {
 		$intro = true;
 	}
+	
+	if($_REQUEST["use"] == "java" || in_array($problemId, $javaProblems))
+		$useJmol = "JAVA";
+	else
+		$useJmol = "HTML5";
 ?>
 <!DOCTYPE HTML>
 <html lang="en-US">
@@ -84,7 +91,7 @@
 						jarFile: 'JmolAppletSigned.jar',
 						isSigned: true,
 						j2sPath: 'http://www.metallacycle.com/play/coursera/lib/jsmol/j2s',
-						use: 'HTML5',
+						use: '<? echo $useJmol; ?>',
 						console: 'console-messages' };
 					jmol = Jmol.getApplet(jmol, jmolOptions);
 				</script>
